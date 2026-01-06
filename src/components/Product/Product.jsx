@@ -4,7 +4,7 @@ const Product = ({ imgSrc }) => {
       <h2>FullStack</h2>
       <ul>
         <li>
-          HTML
+          <p>HTML</p>
           <img
             src="https://placehold.co/400x400/8fbc8f/ffffff?text=HTML"
             alt="HTML"
@@ -14,7 +14,7 @@ const Product = ({ imgSrc }) => {
         </li>
 
         <li>
-          Css
+          <p>Css</p>
           <img
             src="https://placehold.co/400x400/f08080/ffffff?text=CSS"
             alt="css"
@@ -23,7 +23,7 @@ const Product = ({ imgSrc }) => {
           />
         </li>
         <li>
-          React
+          <p>React</p>
           <img src={imgSrc} alt="React" width={200} height={200} />
         </li>
       </ul>
