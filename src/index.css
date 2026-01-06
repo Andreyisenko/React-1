@@ -4,6 +4,6 @@ body {
 
 ul {
   list-style-type: none;
-  display: flex;
+  /* display: flex; */
   justify-content: space-around;
 }

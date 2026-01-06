@@ -26,7 +26,8 @@ const Modal = ({ price, onClose }) => {
           textAlign: "center",
           padding: "20px",
           border: "1px solid",
-          boxShadow: "0 0 40px rgba(188, 255, 2)",
+          boxShadow: "0 0 60px rgba(188, 255, 2)",
+          borderRadius: "20px",
         }}
       >
         <p style={{ color: "yellow" }}>Ціна телефону: {price} грн</p>

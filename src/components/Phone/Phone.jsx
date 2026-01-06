@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Modal from "../Modal/Modal";
+import { Children } from "react";
 
 const Phone = ({ price, imgSrc, name }) => {
   const [showModal, setShowModal] = useState(false);
@@ -20,6 +21,7 @@ const Phone = ({ price, imgSrc, name }) => {
         {!showModal ? "Купити" : "в Корзині"}
       </button>
       {showModal && (
+        // <Modal price={price} onClose={() => setShowModal(false)} />
         <Modal price={price} onClose={() => setShowModal(false)}></Modal>
       )}
       {/* <button onClick={() => alert(`Ціна телефону: ${price} грн`)}>
