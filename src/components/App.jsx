@@ -4,8 +4,16 @@ import Product from "./Product/Product";
 import Phone from "./Phone/Phone";
 import List from "./List/List";
 import User from "./User/User";
+import Counter from "./Counter/Counter";
+import { useState } from "react";
 
 const App = () => {
+  const [allClick, setAllClick] = useState(0);
+
+  const changeAllClick = () => setAllClick((prev) => prev + 1);
+  const minusAllClick = () => setAllClick((prev) => prev - 1);
+  const resAllClick = () => setAllClick(0);
+
   // const arr = ["футбол", "баскетбол", "волейбол", "хокей", "теніс", "теніс"];
   // const showHeader = !false;
   return (
@@ -18,7 +26,19 @@ const App = () => {
       />
       <Product imgSrc="https://placehold.co/400x400/6495ed/ffffff?text=React" />
       <List arrList={arr} /> */}
-      <User />
+      {/* <User /> */}
+      <Counter
+        allClick={allClick}
+        resAllClick={resAllClick}
+        minusAllClick={minusAllClick}
+        changeAllClick={changeAllClick}
+      />
+      <Counter
+        allClick={allClick}
+        resAllClick={resAllClick}
+        minusAllClick={minusAllClick}
+        changeAllClick={changeAllClick}
+      />
       <Footer />
     </div>
   );
