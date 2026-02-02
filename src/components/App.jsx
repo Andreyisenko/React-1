@@ -1,17 +1,19 @@
-import Footer from "./Footer/Footer";
-import Heder from "./Heder/Heder";
-import Product from "./Product/Product";
-import Phone from "./Phone/Phone";
-import List from "./List/List";
-import User from "./User/User";
-import Counter from "./Counter/Counter";
-import { useState } from "react";
+import Footer from './Footer/Footer';
+import Heder from './Heder/Heder';
+import Product from './Product/Product';
+import Phone from './Phone/Phone';
+import List from './List/List';
+import User from './User/User';
+import Counter from './Counter/Counter';
+import { useState } from 'react';
+import NewCounter from './NewCounter/NewCounter';
+import TextHiden from './TextHiden/TextHiden';
 
 const App = () => {
   const [allClick, setAllClick] = useState(0);
 
-  const changeAllClick = () => setAllClick((prev) => prev + 1);
-  const minusAllClick = () => setAllClick((prev) => prev - 1);
+  const changeAllClick = () => setAllClick(prev => prev + 1);
+  const minusAllClick = () => setAllClick(prev => prev - 1);
   const resAllClick = () => setAllClick(0);
 
   // const arr = ["футбол", "баскетбол", "волейбол", "хокей", "теніс", "теніс"];
@@ -27,7 +29,7 @@ const App = () => {
       <Product imgSrc="https://placehold.co/400x400/6495ed/ffffff?text=React" />
       <List arrList={arr} /> */}
       {/* <User /> */}
-      <Counter
+      {/* <Counter
         allClick={allClick}
         resAllClick={resAllClick}
         minusAllClick={minusAllClick}
@@ -38,7 +40,10 @@ const App = () => {
         resAllClick={resAllClick}
         minusAllClick={minusAllClick}
         changeAllClick={changeAllClick}
-      />
+      /> */}
+      {/* <NewCounter /> */}
+      <TextHiden user="Taras" />
+      {/* <TextHiden user="Bob" /> */}
       <Footer />
     </div>
   );

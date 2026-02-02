@@ -1,0 +1,25 @@
+.text {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.text.show {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.content {
+  max-height: 0;
+  transition: max-height 0.5s ease;
+  overflow: hidden;
+  background-color: #b63232;
+  padding: 0 10px;
+}
+
+.content.open {
+  max-height: 200px;
+}

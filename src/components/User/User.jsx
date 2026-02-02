@@ -1,14 +1,14 @@
-import { useState } from "react";
-import css from "./User.module.css";
+import { useState } from 'react';
+import css from './User.module.css';
 const User = () => {
   const [bodyColor, setBodyColor] = useState(false);
   const HandStyle = () => setBodyColor(true);
   const HandleClick = () => setBodyColor(false);
-  console.log("Hello Bob");
+  console.log('Hello Bob');
   return (
     <div
       style={{
-        backgroundColor: bodyColor ? "orange" : "green",
+        backgroundColor: bodyColor ? 'orange' : 'green',
       }}
       className={css.wrap}
     >
